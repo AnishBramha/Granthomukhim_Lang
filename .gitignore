@@ -1,0 +1,10 @@
+*.toc
+*.aux
+*.log
+*.conf
+*.DS_Store
+*.directory
+*.dir
+*._dir
+*._directory
+
