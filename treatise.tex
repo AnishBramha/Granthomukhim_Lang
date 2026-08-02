@@ -1,0 +1,1787 @@
+\documentclass[14pt,oneside]{book}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{xcolor}
+
+\setmainlanguage{english}
+\setotherlanguage{sanskrit}
+\newfontfamily\brahmifont{Noto Sans Brahmi}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{titlesec}
+
+\setcounter{tocdepth}{2}
+\let\b\undefined
+\newcommand{\b}[1]{{\brahmifont #1}}
+
+\usepackage{tabularray}
+\usepackage{array}
+\UseTblrLibrary{booktabs}
+\definecolor{headerblue}{RGB}{120,150,255}
+
+\title{\Huge Granthōmukhīm \\ \b{𑀕𑁆𑀭𑀦𑁆𑀣𑁄𑀫𑀼𑀔𑀻𑀫𑁆}}
+\author{\Large Anish Teja Bramhajosyula \\ \Large \b{𑀅𑀦𑀻𑀰𑁆 𑀢𑁂𑀚 𑀩𑁆𑀭𑀳𑁆𑀫𑀚𑁄𑀲𑁆𑀬𑀼𑀮​}}
+\date{}
+
+\newfontfamily\ipa{Charis SIL}
+
+
+
+\usepackage{float}
+
+
+\begin{document}
+
+
+\maketitle
+% \frontmatter
+\tableofcontents
+% \mainmatter
+
+
+\chapter{The Language}
+
+Welcome to this treatise on the Granthōmukhīm language! This is my first conlang which has been in the works for about six years now, with hiatuses in the middle. It started out as an attempt to iron out the irregularities in Pāṇinian Sanskrit (ironic, isn't it?). I took the base vocabulary of Sanskrit and studied the Indo{\textendash}Aryan and Indo{\textendash}European branch of languages for information on how all this worked. The very early versions were just Sanskrit words with modified affixes and inflections. It was still Sanskrit, just more Ithkuil{\textendash}like (I did fall prey to that fallacy). It took a few more years of refinement until the grammar matured enough, so I could wean it off of the ad{\textendash}hoc Sanskrit lexicon base and introduce a native system. This was also around the same time that I was learning more about the Dravidian languages, as a tangent to my school language courses. The influence of Dravidian is clearly seen in the phonology that developed over time in this language, giving rise to a rich collection of short vowels, retroflexes, liquids and approximants. \\
+
+\noindent While this was in progress, I made an attempt at a highly analytic languge with no inflections or fusional grammar. The entire lexicon was agonstic to the grammar and meaning was achieved by means of particles, prepositions and postpositions. Its vocabulary was not exactly well{\textendash}researched but more of me rambling and trying to emulate Greek phonology. I did end up using the Greek alphabet for the language. It eventually turned out futile and died out, but what it did teach me was the ease of making an inflectional language with free word{\textendash}order. \\
+
+\noindent Granthōmukhīm is an Indo{\textendash}Dravidian language with its lexicon from Indo{\textendash}Aryan origins, and a highly Dravidian phonology and phonotactics. It has a root{\textendash}affixing system whereïn atomic base words (called \textit{roots}) are affixed to form \textit{stems} of various classes, which are further injected with nuance and meaning, and finally grammatically inflected before being dropped in a sentence. \\
+
+\noindent Here are the features and characteristics of this Granthōmukhīm:
+
+\begin{itemize}[itemsep=-2.5pt]
+
+    \item Phonemic length, aspiration and vowel quality provide semantic distinction.
+
+    \item 10 grammatical cases: Nominative, Accusative, Instrumental, Ablative, Dative, Genitive, Inessive, Adessive, Subessive, Vocative
+    
+    \item 3 grammatical genders (which need not be biological and are purely semantic): Masculine, Feminine, Neuter
+    
+    \item 3 grammatical numbers: Singular, Dual, Plural
+
+    \item A base{\textendash}10 number system written successively from highest to lowest place, with the units preceding the next lowest place
+
+    \item Highly agglutinative with morphosyntactic alignment between adjectives, verbs, nouns and pronouns.
+
+    \item 3 tenses: Present, Past, Future
+
+    \item 6 aspects: Gnomic, Habitual, Progressive, Aorist, Retrospective, Simple
+
+    \item 7 moods: Declarative, Conditional, Imperative, Abilitative, Exclamatory, Optative
+
+    \item Active and passive voices
+
+    \item Nominal{\textendash}derived case{\textendash}based interrogatives and relatives
+
+    \item 4{\textendash}way distinction in proximity and in clusivity
+
+    \item Internal and external sandhi
+
+\end{itemize}
+
+
+
+
+
+
+
+
+\chapter{Writing System \& Phonetics}
+
+
+
+\section{The Extended Brahmi Abugida}
+
+On paper, the language has a native Brahmic script, derived from inspecting and taking inspiration from all the modern Brahmic scripts. It is highly symmetric, with aspiration written as a secondary sound change and possesses regular cononsant clusters in writing. While this is to be written down by hand, there's no Unicode support for a conscript, and hence I needed another script to write it in digital media. \noindent Incorporating a digital writing system to complement the spoken standard was a major challenge. In fact, I used Devanagari in the very early stages of the language's development. But I decided that standard Devanagari was lacking and something more substantial was needed to support the language, given its tendency to form long agglutinative words. Given its Indo{\textendash}Aryan origins, the script ideally should have been a Brahmic abugida. But, for proof of concept, I used an extended version of the modern Hebrew alphabet, repurposing its letters to support the entire phonetic inventory of my language, including vowels, which is not exactly easy, given that Hebrew is an abjad. I made it a partial abugida by requiring every consonant to have an inherent vowel, but wrote down every other vowel beside by manual combination of the aleph and the yod sounds. The geresh was repurposed to cancel the vowel marker. It worked well, although reading it was not exactly easy, for I had no `training' in reading Hebrew. Eventually, I used the Brahmi alphabet itself, but with a few extensions from Old Tamil. Despite being Indo{\textendash}Aryan in origin, the phonology of the language is highly influenced by Dravidian, and thus possesses a rich set of liquids and retroflexes, and a lot of short vowels, which the standard Brahmi script does not account for.
+
+
+\subsection{Vowels}
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|}
+\hline
+
+    \b{𑀅} & \b{𑀋}  & \b{𑀐}  \\
+    \hline
+
+    \b{𑀅} & \b{𑀌}  & \b{𑁲}  \\
+    \hline
+
+    \b{𑀇} & \b{𑀍}  & \b{𑀑}  \\
+    \hline
+
+    \b{𑀈}  & \b{𑀎} & \b{𑀒}  \\
+    \hline
+
+    \b{𑀉} & \b{𑁱} & \b{𑀅𑀁}  \\
+    \hline
+
+    \b{𑀊} & \b{𑀏} & \\
+    \hline
+
+
+\end{tabular}
+\end{table}
+
+
+
+\subsection{Consonants}
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+
+
+\b{𑀓} & \b{𑀘} & \b{𑀝} & \b{𑀢} & \b{𑀧} & \b{𑀬} & \b{𑀱} & \b{𑀶} \\
+\hline
+
+\b{𑀔} & \b{𑀙} & \b{𑀞} & \b{𑀣} & \b{𑀨} & \b{𑀭} & \b{𑀲} \\
+\hline
+
+\b{𑀕} & \b{𑀚} & \b{𑀟} & \b{𑀤} & \b{𑀩} & \b{𑀮} & \b{𑀳} \\
+\hline
+
+\b{𑀖} & \b{𑀛} & \b{𑀠} & \b{𑀥} & \b{𑀪} & \b{𑀯} & \b{𑁵} \\
+\hline
+
+\b{𑀗} & \b{𑀜} & \b{𑀡} & \b{𑀦} & \b{𑀫} & \b{𑀰} & \b{𑀴} \\
+\hline
+
+\end{tabular}
+\end{table}
+
+
+\subsection{Combinations}
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+
+    \b{𑀓} & \b{𑀓𑀾} & \b{𑀓𑁃} \\
+    \hline
+
+    \b{𑀓𑀸} & \b{𑀓𑀿} & \b{𑀓𑁴}  \\
+    \hline
+
+    \b{𑀓𑀺} & \b{𑀓𑁀} & \b{𑀓𑁄}  \\
+    \hline
+
+    \b{𑀓𑀻} & \b{𑀓𑁁} & \b{𑀓𑁅}  \\
+    \hline
+
+    \b{𑀓𑀼} & \b{𑀓𑁳} & \b{𑀓𑀁} \\
+    \hline
+
+    \b{𑀓𑀽} & \b{𑀓𑁂} & \b{𑀓𑁆}  \\
+    \hline
+
+
+\end{tabular}
+    
+\end{table}
+
+
+
+
+\subsection{IPA Classification}
+
+
+
+\begin{table}[h]
+\centering
+
+\begin{tblr}{
+    width=\textwidth,
+    colspec={Q[l,1.8cm] *{13}{X[c,m]}},
+    rows={m},
+    hlines,
+    vlines,
+    column{1}={font=\bfseries\itshape},
+}
+
+% Row 1: Header
+& 
+\SetCell[c=3]{c}{\textbf{\textit{voiceless}}} & & & 
+\SetCell[c=10]{c}{\textbf{\textit{voiced}}} & & & & & & & & & 
+\\
+
+% Row 2: Open
+glottal & & & & & \ipa{ɦ} & & & & & \ipa{a} & \ipa{aː} & & 
+\\
+
+% Row 3: Velar
+velar & 
+& \ipa{k} & \ipa{kʰ} & \ipa{g} & \ipa{gʱ} & \ipa{ŋ} & & & & & & & 
+\\
+
+% Row 4: Palatal
+palatal &
+\ipa{ʃ} & \ipa{t͡ʃ} & \ipa{t͡ʃʰ} & \ipa{d͡ʒ} & \ipa{d͡ʒʱ} & \ipa{ɲ} & \ipa{j} & & & \ipa{i}, \ipa{e} & \ipa{iː} & \ipa{eː} & \ipa{ai} 
+\\
+
+% Row 5: Retroflex
+retroflex &
+\ipa{ʂ} & \ipa{ʈ} & \ipa{ʈʰ} & \ipa{ɖ} & \ipa{ɖʱ} & \ipa{ɳ} &  & \ipa{ɻ}, \ipa{ɽ} & \ipa{ɭ} & \ipa{r̩} & \ipa{r̩ː} & & 
+\\
+
+% Row 6: Dental / Alveolar
+dental &
+\ipa{s} & \ipa{t̪} & \ipa{t̪ʰ} & \ipa{d̪} & \ipa{d̪ʱ} & \ipa{n} & & \ipa{ɾ} & \ipa{l} & \ipa{l̩} & \ipa{l̩ː} & & 
+\\
+
+% Row 7: Labial
+labial &
+& \ipa{p} & \ipa{pʰ} & \ipa{b} & \ipa{bʰ} & \ipa{m} & \ipa{v} & & & \ipa{u}, \ipa{o} & \ipa{uː} & \ipa{oː} & \ipa{au}
+\\
+
+% Row 8: Articulation Types
+& 
+\textit{\textbf{fric.}}  & 
+\textit{\textbf{un.}} & 
+\textit{\textbf{asp.}}   & 
+\textit{\textbf{un.}} & 
+\textit{\textbf{asp.}}   & 
+\textit{\textbf{nas.}} & 
+\textit{\textbf{sv.}} & 
+\textit{\textbf{rh.}} & 
+\textit{\textbf{lat.}} & 
+\textit{\textbf{sh.}} &
+\SetCell[c=3]{c}{\textit{\textbf{long.}}} & & 
+\\
+
+% Row 9: Stops / Simple / Diphthongs
+& 
+& 
+\SetCell[c=5]{c}{\textit{\textbf{plosive}}} & & & & &
+\textit{\textbf{gl.}} &
+\SetCell[c=2]{c}{\textit{\textbf{liquid}}}
+& & 
+\SetCell[c=3]{c}{\textit{\textbf{mono.}}} & & & 
+\textit{\textbf{diph.}} 
+\\
+
+% Row 10: Approximants / Vocalics
+& 
+& & & & & &
+\SetCell[c=3]{c}{\textit{\textbf{approximant}}} & & &
+\SetCell[c=4]{c}{\textit{\textbf{vocalic}}} & & &
+\\
+
+% Row 11: Consonants / Vowels
+& 
+\SetCell[c=9]{c}{\textit{\textbf{consonant}}} & & & & & & & & & 
+\SetCell[c=4]{c}{\textit{\textbf{vowel}}} & & & 
+\\
+
+\end{tblr}
+\end{table}
+
+
+
+\begin{table}[h]
+\centering
+
+\begin{tblr}{
+    width=\textwidth,
+    colspec={Q[l,1.8cm] *{13}{X[c,m]}},
+    rows={m},
+    hlines,
+    vlines,
+    column{1}={font=\bfseries\itshape},
+}
+
+% Row 1: Header
+& 
+\SetCell[c=3]{c}{\textbf{\textit{voiceless}}} & & & 
+\SetCell[c=10]{c}{\textbf{\textit{voiced}}} & & & & & & & & & 
+\\
+
+% Row 2: Open
+glottal & & & & & \b{𑀳} & & & & & \b{𑀅} & \b{𑀆} & & 
+\\
+
+% Row 3: Velar
+velar & 
+& \b{𑀓} & \b{𑀔} & \b{𑀕} & \b{𑀖} & \b{𑀗} & & & & & & & 
+\\
+
+% Row 4: Palatal
+palatal &
+\b{𑀰} & \b{𑀘} & \b{𑀙} & \b{𑀚} & \b{𑀛} & \b{𑀜} & \b{𑀬} & & & \b{𑀇},\b{𑁱} & \b{𑀈} & \b{𑀏} & \b{𑀐}
+\\
+
+% Row 5: Retroflex
+retroflex &
+\b{𑀱} & \b{𑀝} & \b{𑀞} & \b{𑀟} & \b{𑀠} & \b{𑀡} &  & \b{𑀴},\b{𑀶} & \b{𑁵} & \b{𑀋} & \b{𑀌} & & 
+\\
+
+% Row 6: Dental / Alveolar
+dental &
+\b{𑀲} & \b{𑀢} & \b{𑀣} & \b{𑀤} & \b{𑀥} & \b{𑀦} & & \b{𑀭} & \b{𑀮} & \b{𑀍} & \b{𑀎} & & 
+\\
+
+% Row 7: Labial
+labial &
+& \b{𑀧} & \b{𑀨} & \b{𑀩} & \b{𑀪} & \b{𑀫} & \b{𑀯} & & & \b{𑀉},\b{𑁲} & \b{𑀊} & \b{𑀑} & \b{𑀒}
+\\
+
+% Row 8: Articulation Types
+& 
+\textit{\textbf{fric.}}  & 
+\textit{\textbf{un.}} & 
+\textit{\textbf{asp.}}   & 
+\textit{\textbf{un.}} & 
+\textit{\textbf{asp.}}   & 
+\textit{\textbf{nas.}} & 
+\textit{\textbf{sv.}} & 
+\textit{\textbf{rh.}} & 
+\textit{\textbf{lat.}} & 
+\textit{\textbf{sh.}} &
+\SetCell[c=3]{c}{\textit{\textbf{long.}}} & & 
+\\
+
+% Row 9: Stops / Simple / Diphthongs
+& 
+& 
+\SetCell[c=5]{c}{\textit{\textbf{plosive}}} & & & & &
+\textit{\textbf{gl.}} &
+\SetCell[c=2]{c}{\textit{\textbf{liquid}}}
+& & 
+\SetCell[c=3]{c}{\textit{\textbf{mono.}}} & & & 
+\textit{\textbf{diph.}} 
+\\
+
+% Row 10: Approximants / Vocalics
+& 
+& & & & & &
+\SetCell[c=3]{c}{\textit{\textbf{approximant}}} & & &
+\SetCell[c=4]{c}{\textit{\textbf{vocalic}}} & & &
+\\
+
+% Row 11: Consonants / Vowels
+& 
+\SetCell[c=9]{c}{\textit{\textbf{consonant}}} & & & & & & & & & 
+\SetCell[c=4]{c}{\textit{\textbf{vowel}}} & & & 
+\\
+
+\end{tblr}
+\end{table}
+
+
+
+
+
+
+\begin{multicols}{3}
+
+\begin{itemize}
+    
+    \item \textit{fric}.  {\textemdash} fricative
+    \item \textit{un}.  {\textemdash} unaspirated
+    \item \textit{asp}.  {\textemdash} aspirated
+    \item \textit{nas}.  {\textemdash} nasal
+    \item \textit{sv}. {\textemdash} semivowel
+    \item \textit{rh.}. {\textemdash} rhotic
+    \item \textit{lat.}. {\textemdash} lateral
+    \item \textit{sh}.  {\textemdash} short
+    \item \textit{long}.  {\textemdash} long
+    \item \textit{gl.}.  {\textemdash} glide
+    \item \textit{mono.}.  {\textemdash} monophthong
+    \item \textit{diph.}.  {\textemdash} diphthong
+
+\end{itemize}
+
+\end{multicols}
+
+
+
+
+\pagebreak
+
+\section{Sandhi}
+
+This section specifies all the rules of phonetic conjugation that exist in the language. Any rule that applied to an unaspirated consonant also applies to its aspirated equivalent, though this rule is not necessarily the same for voiced and voiceless counterparts of a sound.
+
+
+\subsection{Velars}
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|}
+\hline
+
+\textbf{Antecedent} & \textbf{Succedent} & \textbf{Result} \\
+\hline
+
+\b{𑀓𑁆} & \b{𑀕𑁆} & \b{𑀕𑁆𑀕𑁆} \\
+\hline
+
+\b{𑀕𑁆} & \b{𑀓𑁆} & \b{𑀕𑁆𑀕𑁆} \\
+\hline
+
+\b{𑀓𑁆} & \b{𑀘𑁆} & \b{𑀘𑁆𑀘𑁆} \\
+\hline
+
+\b{𑀕𑁆} & \b{𑀘𑁆} & \b{𑀚𑁆𑀚𑁆} \\
+\hline
+
+\b{𑀓𑁆, 𑀕𑁆} & \b{𑀚𑁆} & \b{𑀚𑁆𑀚𑁆} \\
+\hline
+
+\b{𑀓𑁆} & \b{𑀝𑁆} & \b{𑀝𑁆𑀝𑁆} \\
+\hline
+
+\b{𑀓𑁆} & \b{𑀟𑁆} & \b{𑀟𑁆𑀟𑁆} \\
+\hline
+
+\b{𑀕𑁆} & \b{𑀝𑁆, 𑀟𑁆} & \b{𑀟𑁆𑀟𑁆} \\
+\hline
+
+\b{𑀓𑁆} & \b{𑀧𑁆} & \b{𑀧𑁆𑀧𑁆} \\
+\hline
+
+\b{𑀓𑁆} & \b{𑀩𑁆} & \b{𑀩𑁆𑀩𑁆} \\
+\hline
+
+\b{𑀕𑁆} & \b{𑀧𑁆, 𑀩𑁆} & \b{𑀩𑁆𑀩𑁆} \\
+\hline
+
+\b{𑀕𑁆} & \b{𑀲𑁆} & \b{𑀓𑁆𑀲𑁆} \\
+\hline
+
+\b{𑀕𑁆} & \b{𑀰𑁆, 𑀱𑁆} & \b{𑀓𑁆𑀱𑁆} \\
+\hline
+
+\b{𑀓𑁆} & \b{𑁵𑁆, 𑀴𑁆} & \b{𑀓𑁆𑀮𑁆} \\
+\hline
+
+\b{𑀕𑁆} & \b{𑁵𑁆, 𑀴𑁆} & \b{𑀕𑁆𑀮𑁆} \\
+\hline
+
+\b{𑀓𑁆} & \b{𑀳𑁆} & \b{𑀓𑁆𑀓𑁆} \\
+\hline
+
+\b{𑀕𑁆} & \b{𑀳𑁆} & \b{𑀕𑁆𑀕𑁆} \\
+\hline
+
+\end{tabular}
+\end{table}
+
+
+\subsection{Palatals}
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|}
+\hline
+
+\textbf{Antecedent} & \textbf{Succedent} & \textbf{Result} \\
+\hline
+
+\b{𑀘𑁆, 𑀚𑁆} & \b{𑀓𑁆, 𑀕𑁆} & \b{𑀱𑁆𑀓𑁆} \\
+\hline
+
+\b{𑀘𑁆} & \b{𑀚𑁆} & \b{𑀚𑁆𑀚𑁆} \\
+\hline
+
+\b{𑀚𑁆} & \b{𑀘𑁆} & \b{𑀚𑁆𑀚𑁆} \\
+\hline
+
+\b{𑀘𑁆} & \b{𑀝𑁆, 𑀟𑁆} & \b{𑀝𑁆𑀝𑁆} \\
+\hline
+
+\b{𑀚𑁆} & \b{𑀝𑁆, 𑀟𑁆} & \b{𑀱𑁆𑀝𑁆} \\
+\hline
+
+\b{𑀘𑁆} & \b{𑀢𑁆} & \b{𑀢𑁆𑀢𑁆} \\
+\hline
+
+\b{𑀘𑁆} & \b{𑀤𑁆} & \b{𑀤𑁆𑀤𑁆} \\
+\hline
+
+\b{𑀚𑁆} & \b{𑀢𑁆} & \b{𑀲𑁆𑀢𑁆} \\
+\hline
+
+\b{𑀚𑁆} & \b{𑀤𑁆} & \b{𑀰𑁆𑀤𑁆} \\
+\hline
+
+\b{𑀘𑁆, 𑀚𑁆} & \b{𑀧𑁆} & \b{𑀱𑁆𑀧𑁆} \\
+\hline
+
+\b{𑀘𑁆, 𑀚𑁆} & \b{𑀩𑁆} & \b{𑀰𑁆𑀩𑁆} \\
+\hline
+
+\b{𑀘𑁆} & \b{𑀰𑁆, 𑀲𑁆} & \b{𑀘𑁆𑀘𑁆} \\
+\hline
+
+\b{𑀚𑁆} & \b{𑀰𑁆, 𑀲𑁆} & \b{𑀚𑁆𑀚𑁆} \\
+\hline
+
+\b{𑀘𑁆, 𑀚𑁆} & \b{𑀱𑁆} & \b{𑀓𑁆𑀱𑁆} \\
+\hline
+
+\b{𑀘𑁆} & \b{𑀮𑁆, 𑁵𑁆, 𑀴𑁆} & \b{𑀘𑁆𑀭𑁆} \\
+\hline
+
+\b{𑀚𑁆} & \b{𑀮𑁆, 𑁵𑁆, 𑀴𑁆} & \b{𑀚𑁆𑀭𑁆} \\
+\hline
+
+\end{tabular}
+\end{table}
+
+
+
+\subsection{Retroflexes}
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|}
+\hline
+
+\textbf{Antecedent} & \textbf{Succedent} & \textbf{Result} \\
+\hline
+
+
+\b{𑀝𑁆} & \b{𑀕𑁆} & \b{𑀟𑁆𑀕𑁆} \\
+\hline
+
+\b{𑀟𑁆} & \b{𑀓𑁆} & \b{𑀟𑁆𑀕𑁆} \\
+\hline
+
+\b{𑀝𑁆} & \b{𑀘𑁆} & \b{𑀘𑁆𑀘𑁆} \\
+\hline
+
+\b{𑀝𑁆} & \b{𑀚𑁆} & \b{𑀚𑁆𑀚𑁆} \\
+\hline
+
+\b{𑀟𑁆} & \b{𑀘𑁆, 𑀚𑁆} & \b{𑀚𑁆𑀚𑁆} \\
+\hline
+
+\b{𑀝𑁆} & \b{𑀟𑁆} & \b{𑀟𑁆𑀟𑁆} \\
+\hline
+
+\b{𑀟𑁆} & \b{𑀝𑁆} & \b{𑀟𑁆𑀟𑁆} \\
+\hline
+
+\b{𑀝𑁆} & \b{𑀢𑁆} & \b{𑀢𑁆𑀢𑁆} \\
+\hline
+
+\b{𑀝𑁆} & \b{𑀤𑁆} & \b{𑀤𑁆𑀤𑁆} \\
+\hline
+
+\b{𑀟𑁆} & \b{𑀢𑁆, 𑀤𑁆} & \b{𑀤𑁆𑀤𑁆} \\
+\hline
+
+\b{𑀝𑁆} & \b{𑀩𑁆} & \b{𑀟𑁆𑀩𑁆} \\
+\hline
+
+\b{𑀟𑁆} & \b{𑀧𑁆} & \b{𑀟𑁆𑀩𑁆} \\
+\hline
+
+
+\b{𑀟𑁆} & \b{𑀭𑁆} & \b{𑀟𑁆𑀶𑁆} \\
+\hline
+
+\b{𑀝𑁆, 𑀟𑁆} & \b{𑀲𑁆, 𑀰𑁆} & \b{𑀝𑁆𑀱𑁆} \\
+\hline
+
+\b{𑀝𑁆} & \b{𑀮𑁆, 𑁵𑁆, 𑀴𑁆} & \b{𑀝𑁆𑁵𑁆} \\
+\hline
+
+\b{𑀟𑁆} & \b{𑀮𑁆, 𑁵𑁆, 𑀴𑁆} & \b{𑀟𑁆𑁵𑁆} \\
+\hline
+
+
+\end{tabular}
+\end{table}
+
+
+
+
+\subsection{Dentals}
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|}
+\hline
+
+\textbf{Antecedent} & \textbf{Succedent} & \textbf{Result} \\
+\hline
+
+
+\b{𑀢𑁆} & \b{𑀕𑁆} & \b{𑀤𑁆𑀕𑁆} \\
+\hline
+
+\b{𑀤𑁆} & \b{𑀓𑁆} & \b{𑀤𑁆𑀕𑁆} \\
+\hline
+
+\b{𑀢𑁆} & \b{𑀘𑁆} & \b{𑀘𑁆𑀘𑁆} \\
+\hline
+
+\b{𑀤𑁆} & \b{𑀘𑁆} & \b{𑀚𑁆𑀚𑁆} \\
+\hline
+
+\b{𑀢𑁆, 𑀤𑁆} & \b{𑀚𑁆} & \b{𑀚𑁆𑀚𑁆} \\
+\hline
+
+\b{𑀢𑁆} & \b{𑀝𑁆} & \b{𑀝𑁆𑀝𑁆} \\
+\hline
+
+\b{𑀤𑁆} & \b{𑀝𑁆} & \b{𑀟𑁆𑀟𑁆} \\
+\hline
+
+\b{𑀢𑁆, 𑀤𑁆} & \b{𑀟𑁆} & \b{𑀟𑁆𑀟𑁆} \\
+\hline
+
+\b{𑀢𑁆} & \b{𑀤𑁆} & \b{𑀤𑁆𑀤𑁆} \\
+\hline
+
+\b{𑀤𑁆} & \b{𑀢𑁆} & \b{𑀤𑁆𑀤𑁆} \\
+\hline
+
+\b{𑀢𑁆} & \b{𑀩𑁆} & \b{𑀤𑁆𑀩𑁆} \\
+\hline
+
+\b{𑀤𑁆} & \b{𑀧𑁆} & \b{𑀤𑁆𑀩𑁆} \\
+\hline
+
+\b{𑀢𑁆, 𑀤𑁆} & \b{𑀰𑁆} & \b{𑀘𑁆𑀘𑁆} \\
+\hline
+
+\b{𑀢𑁆, 𑀤𑁆} & \b{𑀱𑁆} & \b{𑀓𑁆𑀱𑁆} \\
+\hline
+
+\b{𑀢𑁆} & \b{𑀮𑁆, 𑁵𑁆, 𑀴𑁆} & \b{𑀢𑁆𑀮𑁆} \\
+\hline
+
+\b{𑀤𑁆} & \b{𑀮𑁆, 𑁵𑁆, 𑀴𑁆} & \b{𑀤𑁆𑀮𑁆} \\
+\hline
+
+\end{tabular}
+\end{table}
+
+
+\subsection{Bilabial}
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|}
+\hline
+
+\textbf{Antecedent} & \textbf{Succedent} & \textbf{Result} \\
+\hline
+
+
+\b{𑀧𑁆} & \b{𑀕𑁆} & \b{𑀩𑁆𑀕𑁆} \\
+\hline
+
+\b{𑀩𑁆} & \b{𑀓𑁆} & \b{𑀩𑁆𑀕𑁆} \\
+\hline
+
+\b{𑀧𑁆} & \b{𑀚𑁆} & \b{𑀩𑁆𑀚𑁆} \\
+\hline
+
+\b{𑀩𑁆} & \b{𑀚𑁆} & \b{𑀩𑁆𑀚𑁆} \\
+\hline
+
+\b{𑀧𑁆} & \b{𑀟𑁆} & \b{𑀩𑁆𑀟𑁆} \\
+\hline
+
+\b{𑀩𑁆} & \b{𑀝𑁆} & \b{𑀩𑁆𑀟𑁆} \\
+\hline
+
+\b{𑀧𑁆} & \b{𑀤𑁆} & \b{𑀩𑁆𑀤𑁆} \\
+\hline
+
+\b{𑀩𑁆} & \b{𑀢𑁆} & \b{𑀩𑁆𑀤𑁆} \\
+\hline
+
+\b{𑀧𑁆} & \b{𑀩𑁆} & \b{𑀩𑁆𑀩𑁆} \\
+\hline
+
+\b{𑀩𑁆} & \b{𑀧𑁆} & \b{𑀩𑁆𑀩𑁆} \\
+\hline
+
+\b{𑀧𑁆} & \b{𑀮𑁆, 𑁵𑁆, 𑀴𑁆} & \b{𑀧𑁆𑀮𑁆} \\
+\hline
+
+\b{𑀩𑁆} & \b{𑀮𑁆, 𑁵𑁆, 𑀴𑁆} & \b{𑀩𑁆𑀮𑁆} \\
+\hline
+
+
+\end{tabular}
+\end{table}
+
+
+\subsection{Sibilants}
+
+
+The voiceless palato{\textendash}alveolar sibilant \b{𑀰𑁆} mutates into the voiceless retroflex sibilant \b{𑀱𑁆} when initial to a velar, retroflex or a bilabial. Hetero{\textendash}combinations of any of the sibilants (the above two and the voiceless coronal \b{𑀲𑁆}) results in a voiceless retroflex sibilant geminate.
+
+
+\subsection{Voiceled Glottal Fricative/Aspirate}
+
+
+Whenever this sound (\b{𑀳𑁆}) is succedent to another velar, palatal, retroflex, dental or bilabial consonant, it leaves the initial alone and mutates into the aspirate (respecting the voice) of the initial.
+
+
+
+\subsection{Nasals}
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|}
+\hline
+
+\textbf{Antecedent} & \textbf{Succedent} & \textbf{Result} \\
+\hline
+
+    \b{𑀗𑁆, 𑀜𑁆, 𑀡𑁆, 𑀦𑁆} & Velar & \b{𑀗𑁆} \\
+    \hline
+
+    \b{𑀗𑁆, 𑀜𑁆, 𑀡𑁆, 𑀦𑁆} & Palatal & \b{𑀜𑁆} \\
+    \hline
+
+    \b{𑀗𑁆, 𑀜𑁆, 𑀡𑁆, 𑀦𑁆} & Retroflex & \b{𑀡𑁆} \\
+    \hline
+
+    \b{𑀗𑁆, 𑀜𑁆, 𑀡𑁆, 𑀦𑁆} & Dental & \b{𑀦𑁆} \\
+    \hline
+
+    \b{𑀗𑁆, 𑀜𑁆, 𑀡𑁆, 𑀦𑁆} & Bilabial & \b{𑀫𑁆} \\
+    \hline
+
+    Velar & \b{𑀫𑁆} & \b{𑀗𑁆𑀫𑁆} \\
+    \hline
+
+    Palatal & \b{𑀫𑁆} & \b{𑀜𑁆𑀫𑁆} \\
+    \hline
+
+    Retroflex & \b{𑀫𑁆} & \b{𑀡𑁆𑀫𑁆} \\
+    \hline
+
+    Dental & \b{𑀫𑁆} & \b{𑀦𑁆𑀫𑁆} \\
+    \hline
+
+    Bilabial & \b{𑀫𑁆} & \b{𑀫𑁆𑀫𑁆} \\
+    \hline
+
+    Non{\textendash}Labial Nasal 1 & Non{\textendash}Labial Nasal 2 & Nasal 1 geminate \\
+    \hline
+
+
+\end{tabular}
+\end{table}
+
+
+
+
+\subsection{Vowels}
+
+\begin{itemize}
+    
+    \item Any vowel encountering itself (even with different length) becomes a long vowel.
+
+    \item The next set of rules combine vowel classes when the initial is a monophthong.
+
+        \begin{itemize}
+            
+            \item \b{𑀅 + 𑀇} {\textemdash} \b{𑁱}
+            \item \b{𑀅 + 𑀉} {\textemdash} \b{𑁲}
+            \item \b{𑀅 + 𑀈} or \b{𑀆 + 𑀇} or \b{𑀆 + 𑀈} {\textemdash} \b{𑀏}
+            \item \b{𑀅 + 𑀉} or \b{𑀆 + 𑀉} or \b{𑀆 + 𑀊} {\textemdash} \b{𑀑}
+            \item \b{𑀅, 𑀆} + \b{𑁱, 𑀏} {\textemdash} \b{𑀐}
+            \item \b{𑀅, 𑀆} + \b{𑁲, 𑀑} {\textemdash} \b{𑀒}
+            \item \b{𑀇} + \b{𑀅, 𑀆} {\textemdash} \b{𑀬, 𑀬𑀸}
+            \item \b{𑀈} + \b{𑀅, 𑀆} {\textemdash} \b{𑀈𑀬, 𑀈𑀬𑀸}
+            \item \b{𑀇} + \b{𑀉, 𑀊} {\textemdash} \b{𑀬𑀼, 𑀬𑀽}
+            \item \b{𑀈} + \b{𑀉, 𑀊} {\textemdash} \b{𑀈𑀬𑀼, 𑀈𑀬𑀽}
+            \item \b{𑀇} + \b{𑁱, 𑀏} {\textemdash} \b{𑀬𑁳, 𑀬𑁂}
+            \item \b{𑀈} + \b{𑁱, 𑀏} {\textemdash} \b{𑀈𑀬𑁳, 𑀈𑀬𑁂}
+            \item \b{𑀇} + \b{𑁲, 𑀑} {\textemdash} \b{𑀬𑁴, 𑀬𑁄}
+            \item \b{𑀈} + \b{𑁲, 𑀑} {\textemdash} \b{𑀈𑀬𑁴, 𑀈𑀬𑁄}
+            \item \b{𑀉} + \b{𑀅, 𑀆} {\textemdash} \b{𑀯, 𑀯𑀸}
+            \item \b{𑀊} + \b{𑀅, 𑀆} {\textemdash} \b{𑀊𑀯, 𑀊𑀯𑀸}
+            \item \b{𑀉} + \b{𑀇, 𑀈} {\textemdash} \b{𑀯𑀺, 𑀯𑀻}
+            \item \b{𑀊} + \b{𑀇, 𑀈} {\textemdash} \b{𑀊𑀯𑀺, 𑀊𑀯𑀻}
+            \item \b{𑀉} + \b{𑁱, 𑀏} {\textemdash} \b{𑀯𑁳, 𑀯𑁂}
+            \item \b{𑀊} + \b{𑁱, 𑀏} {\textemdash} \b{𑀊𑀯𑁳, 𑀊𑀯𑁂}
+            \item \b{𑀉} + \b{𑁲, 𑀑} {\textemdash} \b{𑀯𑁴, 𑀯𑁄}
+            \item \b{𑀊} + \b{𑁲, 𑀑} {\textemdash} \b{𑀊𑀯𑁴, 𑀊𑀯𑁄}
+            
+
+        \end{itemize}
+
+    \item The next set of rules are for when the initial is a diphthong (either regular or monophthongised).
+
+        \begin{itemize}
+            
+            \item If the initial is a palatal, then it is left as it is and the final vowel is attached to \b{𑀬𑁆} (respecting length)
+
+            \item If the initial is a labial, then it is left as it is and the final vowel is attached to \b{𑀯𑁆} (respecting length)
+
+            \item In the above two cases, the resultant is long if and only if at least one of the two vowels is long.
+
+        \end{itemize}
+
+
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{Grammar}
+
+\section{Nominals}
+
+
+Given its Indo{\textendash}Aryan origins, the grammar specifies an extended system of nine true nominal grammatical cases {\textemdash} nominative (default), accusative, instrumental, ablative, dative, inessive, adessive, subessive and vocative {\textemdash} and one pseudo{\textendash}nominal adjectival genitive case. Unlike other Indo{\textendash}Aryan languages, the vocative is treated as a true nominal case and not as a subsidiary nominative. The grammar allows for interesting recursive and paradoxical vocative usages. The system is fully nominative{\textendash}accusative, unlike some ergative{\textendash}absolutive Indo{\textendash}Aryan descendants. There are three grammatical genders and three cardinal and ordinal numbers.
+
+
+\subsection{Nouns}
+
+Given in table 3.1 is a list of declensions taken by three words \b{𑀭𑀸𑀫}, \b{𑀮𑀢𑀸} and \b{𑀯𑀦𑀁}, which are a boy's name, a girl's name, and a forest, in the masculine, the feminine and the neuter, respectively.
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+
+\textbf{Case} & \textbf{Masculine} & \textbf{Feminine} & \textbf{Neuter} \\
+\hline
+
+Nominative & \b{𑀭𑀸𑀫} & \b{𑀮𑀢𑀸} & \b{𑀯𑀦𑀁} \\
+\hline
+
+Accusative & \b{𑀭𑀸𑀫𑀁} & \b{𑀮𑀢𑀸𑀁} & \b{𑀯𑀦𑀫𑀦𑀁} \\
+\hline
+
+Instrumental & \b{𑀭𑀸𑀫𑁂𑀡} & \b{𑀮𑀢𑁂𑀡𑀸} & \b{𑀯𑀦𑀫𑀦𑀫𑁂𑀡} \\
+\hline
+
+Ablative & \b{𑀭𑀸𑀫𑁅} & \b{𑀮𑀢𑀸𑀯𑁅} & \b{𑀯𑀦𑀫𑀦𑀫𑁅} \\
+\hline
+
+Dative & \b{𑀭𑀸𑀫𑀬} & \b{𑀮𑀢𑀸𑀬𑀸} & \b{𑀯𑀦𑀫𑀦𑀬} \\
+\hline
+
+Genitive & \b{𑀭𑀸𑀫𑀴𑁳} & \b{𑀮𑀢𑀸𑀴𑁂} & \b{𑀯𑀦𑀫𑀦𑀴𑁂} \\
+\hline
+
+Inessive & \b{𑀭𑀸𑀫𑁳} & \b{𑀮𑀢𑁂} & \b{𑀯𑀦𑀫𑀦𑁂} \\
+\hline
+
+Adessive & \b{𑀭𑀸𑀫𑁵𑁳} & \b{𑀮𑀢𑀸𑁵𑁂} & \b{𑀯𑀦𑀫𑀦𑁵𑁂} \\
+\hline
+
+Subessive & \b{𑀭𑀸𑀫𑀡𑁳} & \b{𑀮𑀢𑀸𑀡𑁂} & \b{𑀯𑀦𑀫𑀦𑀡𑁂} \\
+\hline
+
+Vocative & \b{𑀭𑀸𑀫𑁃} & \b{𑀮𑀢𑀸𑀫𑁅 } & \b{𑀯𑀦𑀫𑀦𑀫𑁃} \\
+\hline
+
+\end{tabular}
+
+\caption{Noun Declensions}
+
+\end{table}
+
+
+\subsection{Pronouns}
+
+Given in table 3.2 is a list of all the pronouns, of which three classes {\textemdash} personal, relative and interrogative.
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+
+\textbf{Case} & \textbf{First} & \textbf{Second} & \textbf{Third} & \textbf{Relative} & \textbf{Interrogative} \\
+\hline
+
+Nominative & \b{𑀫𑀺} & \b{𑀲𑀺} & \b{𑀢𑀺} & \b{𑀬𑀺} & \b{𑀓𑀺} \\
+\hline
+
+Accusative & \b{𑀫𑀁𑀺} & \b{𑀲𑀺𑀁} & \b{𑀢𑀺𑀁} & \b{𑀬𑀺𑀁} & \b{𑀓𑀺𑀁} \\
+\hline
+
+Instrumental & \b{𑀫𑁃} & \b{𑀲𑁃} & \b{𑀢𑁃} & \b{𑀬𑁃} & \b{𑀓𑁃} \\
+\hline
+
+Ablative & \b{𑀫𑁂𑀡} & \b{𑀲𑁂𑀡} & \b{𑀢𑁂𑀡} & \b{𑀬𑁂𑀡} & \b{𑀓𑁂𑀡} \\
+\hline
+
+Dative & \b{𑀫𑀬} & \b{𑀲𑀬} & \b{𑀢𑀬} & \b{𑀬𑀬} & \b{𑀓𑀬} \\
+\hline
+
+Genitive & \b{𑀫𑀴𑁂} & \b{𑀲𑀴𑁂} & \b{𑀢𑀴𑁂} & \b{𑀬𑀴𑁂} & \b{𑀓𑀴𑁂} \\
+\hline
+
+Inessive & \b{𑀫𑁂} & \b{𑀲𑁂} & \b{𑀢𑁂} & \b{𑀬𑁂} & \b{𑀓𑁂} \\
+\hline
+
+Adessive & \b{𑀫𑁵𑁂} & \b{𑀲𑁵𑁂} & \b{𑀢𑁂𑁵𑁂} & \b{𑀬𑁵𑁂} & \b{𑀓𑁵𑁂} \\
+\hline
+
+Subessive & \b{𑀫𑀡𑁂} & \b{𑀲𑀡𑁂} & \b{𑀢𑀡𑁂} & \b{𑀬𑀡𑁂} & \b{𑀓𑀡𑁂} \\
+\hline
+
+Vocative & \b{𑀫𑀳𑁂} & \b{𑀲𑀳𑁂} & \b{𑀢𑀳𑁂} & \b{𑀬𑀳𑁂} & \b{𑀓𑀳𑁂} \\
+\hline
+
+\end{tabular}
+
+\caption{Pronouns}
+
+\end{table}
+
+The three genders are intrinsic to a noun, but not to a pronoun and thus need to be suffixed separately, as specified in table 3.3.
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|}
+\hline
+
+
+\textbf{Gender} & \textbf{Suffix} \\
+\hline
+
+Masculine & (default) \\
+\hline
+Feminine & \b{𑀳𑁂} \\
+\hline
+Neuter & \b{𑀳𑀁} \\
+\hline
+
+\end{tabular}
+
+\caption{Grammatical Gender Suffixes}
+
+\end{table}
+
+Both nouns and pronouns are inflected for three numbers in two forms as shown in table 3.4.
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+
+\textbf{Type} & \textbf{Singular} & \textbf{Dual} & \textbf{Plural} \\
+\hline
+Cardinal & (default) & \b{𑀝} & \b{𑀯} \\
+\hline
+Ordinal & \b{𑀬} & \b{𑀤} & \b{𑀢} \\
+\hline
+
+\end{tabular}
+
+\caption{Number Suffixes}
+
+\end{table}
+
+
+\subsection{Declining Nominals}
+
+We have the following structure for declining a noun: \textit{noun{\textendash}root} + \textit{case} + \textit{number}, and for declining a pronoun: \textit{pronoun{\textendash}root} + \textit{case} + \textit{gender} + \textit{number}. Note that inflecting for anything but grammatical case is done only once, when the topic of the sentence is introduced, or a new topic is injected. In future instances, unless deemed necessary, context is sufficient and the other inflections can be omitted. Here are a few examples to illustrate:
+
+
+\begin{itemize}
+    
+    \item \b{𑀯𑀦𑀫𑀦𑁂𑀝} {\textemdash} in two/a pair of forests
+    \item \b{𑀓𑁂𑀡𑀳𑁂𑀯} {\textemdash} with whom \textit{(feminine plural)}?
+
+\end{itemize}
+
+
+
+\subsection{Numbers}
+
+Numbers by themselves are treated as pseudo{\textendash}adjectives. They are inflected as: \textit{number{\textendash}root} + \textit{gender} + \textit{nature (cardinal/ordinal)}. The suffixes are identical. Table 3.5 lists out all the numbers in existence.
+
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+
+
+0 & \b{𑀦𑀱} & 10 & \b{𑀤𑀰} & 40 & \b{𑀤𑀰𑀘𑀯} \\
+\hline
+
+1 & \b{𑀏𑀓} & 11 & \b{𑀏𑀓𑀤𑀰} & 50 & \b{𑀤𑀰𑀧𑀜𑁆𑀘} \\
+\hline
+
+2 & \b{𑀤𑁆𑀯𑀬} & 12 & \b{𑀤𑁆𑀯𑀬𑀤𑀰} & 90 & \b{𑀤𑀰𑀦𑀯} \\
+\hline
+
+3 & \b{𑀢𑁆𑀭𑀬} & 13 & \b{𑀢𑁆𑀭𑀬𑀤𑀰} & 100 & \b{𑀰𑀢} \\
+\hline
+
+4 & \b{𑀘𑀯} & 19 & \b{𑀦𑀯𑀤𑀰} & 200 & \b{𑀰𑀢𑀤𑁆𑀯𑀬} \\
+\hline
+
+5 & \b{𑀧𑀜𑁆𑀘} & 20 & \b{𑀤𑀰𑀤𑁆𑀯𑀬} & 900 & \b{𑀰𑀢𑀦𑀯} \\
+\hline
+
+6 & \b{𑀱𑀟𑁆𑀚} & 21 & \b{𑀏𑀓𑀤𑀰𑀤𑁆𑀯𑀬} & 1000 & \b{𑀲𑀳𑀲𑁆𑀭} \\
+\hline
+
+7 & \b{𑀲𑀧𑁆𑀢} & 22 & \b{𑀤𑁆𑀯𑀬𑀤𑀰𑀤𑁆𑀯𑀬} & 10$^4$ & \b{𑀲𑀳𑀲𑁆𑀭𑀤𑀰} \\
+\hline
+
+8 & \b{𑀅𑀱𑁆𑀝} & 29 & \b{𑀦𑀯𑀤𑀰𑀤𑁆𑀯𑀬} & 10$^5$ & \b{𑀮𑀓𑁆𑀱} \\
+\hline
+
+9 & \b{𑀦𑀯} & 30 & \b{𑀤𑀰𑀢𑁆𑀭𑀬} & 10$^7$ & \b{𑀓𑁄𑀝𑀺} \\
+\hline
+
+
+\end{tabular}
+
+\caption{Numbers}
+
+\end{table}
+
+
+For example: \b{𑀲𑀳𑀲𑁆𑀭𑀤𑁆𑀯𑀬𑀤𑀰𑀰𑀢𑀢𑁆𑀭𑀬𑀧𑀜𑁆𑀘𑀤𑀰𑀘𑀯} {\textemdash} 12345 \textit{(masculine)}
+
+
+
+\subsection{Adjectives}
+
+Adjectives are inflected for gender and number, and in a noun phrase, they always appear before the noun that they are qualifying. Although the word order is free in a sentence, this relative order is enforced within a noun phrase.
+
+For example: \b{𑀉𑀢𑀢 𑀅𑀁 𑀧𑁳𑀤𑁳𑀫𑀸𑀦𑀢} is a \textit{good boy}, but \b{𑀉𑀢𑀢𑀸 𑀅𑀁 𑀧𑁳𑀤𑁳𑀫𑀸𑀦𑀢𑀸} \textit{is a good girl}.
+
+
+\subsection{Adverbs}
+
+Adverbs are not well{\textendash}defined in the English sense, and they are treated as locative adjectives. They are simply bare adjective roots suffixed with \b{𑀏} and are not inflected for number and gender.
+
+
+For example: \b{𑀫𑁄𑀤𑀢𑁂} means \textit{happily}
+
+
+
+
+\section{Verbs}
+
+Verbs are perhaps the densest elements of grammar in this specification. They are highly agglutinative and inflected for several dimensions of agreement. Inflections also help express deep nuance in concepts of time and mood. The general inflection structure of a verb is as follows:
+
+\begin{center}
+    
+    \textit{optional negation} + \textit{verb{\textendash}root} + \textit{person} + \textit{gender} + \textit{number} + \textit{tense \& aspect} + \textit{mood}
+
+\end{center}
+
+
+It is important to note that gender, number and person are inflected with respect to the doër. The gender suffixes are identical to the ones above. Negation (if needed) is expressed by a simple prefix \b{𑀦}. 
+
+The grammar specifies ten tenses, and their suffix markers are given in table 3.6. It is worth noting that some tenses are mutable, and are subject to interpretation under context.
+
+\begin{table}[H]
+\centering
+
+
+\begin{tabular}{|c|c|c|}
+\hline
+
+\textbf{Tense} & \textbf{Aspect} & \textbf{Suffix} \\
+\hline
+
+
+Present & Gnomic                   & (default) \\
+\hline
+
+Present & Habitual                 & \b{𑀯} \\
+\hline
+
+Present & Progressive              & \b{𑀯𑀾} \\
+\hline
+
+Past    & Aorist                   & \b{𑀪𑀽} \\
+\hline
+
+Past    & Progressive              & \b{𑀪𑀾} \\
+\hline
+
+Past    & Retrospective            & \b{𑀪𑀯𑁆} \\
+\hline
+
+Past    & Habitual                 & \b{𑀪𑀿} \\
+\hline
+
+Future  & Simple                   & \b{𑀚} \\
+\hline
+
+Future  & Progressive              & \b{𑀚𑀾} \\
+\hline
+
+Future  & Retrospective            & \b{𑀚𑀿} \\
+\hline
+
+
+\end{tabular}
+    
+\caption{Tense Suffixes}
+
+\end{table}
+
+
+There are seven moods, which are used to increase the nuance expressed via a verb. Important grammatical functions such as conditionals and abilitatives are considered aspects of a verb. Note that an aspect cannot stand by itself without a tense. The suffixes are listed in table 3.7.
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|}
+\hline
+
+
+    \textbf{Mood} & \textbf{Suffix} \\
+    \hline
+
+    Declarative & (default) \\
+    \hline
+
+    Conditional & \b{𑀯𑁂} \\
+    \hline
+
+    Imperative & \b{𑀳𑀼} \\
+    \hline
+
+    Interrogative & \b{𑀓𑀼} \\
+    \hline
+
+    Abilitative & \b{𑀦𑀼} \\
+    \hline
+
+    Exclamatory & \b{𑀳𑁄} \\
+    \hline
+
+    Optative & \b{𑀫𑀼} \\
+    \hline
+
+
+\end{tabular}
+
+\caption{Mood Suffixes}
+
+\end{table}
+
+
+Table 3.8 lists the suffixes used to mark person.
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|}
+\hline
+
+\textbf{Person} & \textbf{Suffix} \\
+\hline
+
+First & \b{𑀫𑀺} \\
+\hline
+
+Second & \b{𑀲𑀺} \\
+\hline
+
+Third & (default) \\
+\hline
+
+
+\end{tabular}
+
+\caption{Person Markers}
+
+\end{table}
+
+
+Here's an example to illustrate all the moving parts in action:
+
+\b{𑀦𑀓𑁆𑀭𑀻𑀟𑀳𑁂𑀯𑀪𑀿𑀦𑀼} {\textemdash} \textit{they (feminine) couldn't have played}
+
+
+\subsection{The Periphrastic Passive}
+
+So far, the verb structure used is purely in the active voice, which is usually the default tone. However, when necessary, the grammar specifies a passive voice, which can be formed in two ways. One (and the most common) way is by mutating the verb root itself into a passive form and then using the inflections specified by the active form, or (less commonly) by using the following structure:
+
+\begin{center}
+    
+    \textit{instrumental subject} + \textit{past form of the verb in agreement}
+
+\end{center}
+
+
+Note that this method of forming the passive is only defined for the present tense, and does not exist for the past and the future tenses. For those, the verb root must be mutated. The past \textit{form} means that the perfective aspect is carried over, as in, simple to simple and progressive to progressive. The verb in this new form must be inflected to agree with the subject in the instrumental form that comes with it. In this verb phrase, the order can be switched around, but the two components move together as a unit and cannot be separated. Such conveniences are only facilitated by mutating the verb root. When the subject is unspecified, use the neuter singular.
+
+For example: \b{𑀢𑁂𑀡𑀢𑀁 𑀯𑀤𑀳𑀁𑀪𑀽} {\textemdash} it has been told
+
+
+
+\section{Determiners \& Conjunctives}
+
+
+\subsection{Conjunctions}
+
+These are simple atoms that appear in between connecting clauses. Table 3.9 lists all the conjunctions.
+
+\begin{table}[H]
+\centering
+
+
+\begin{tabular}{|c|c|}
+\hline
+
+and & \b{𑀘} \\
+\hline
+
+or & \b{𑀯} \\
+\hline
+
+but & \b{𑀓𑁀} \\
+\hline
+
+enough/so/even & \b{𑀔𑁆𑀯} \\
+\hline
+
+than & \b{𑀦𑁃} \\
+\hline
+
+
+\end{tabular}
+    
+\caption{Conjunctions}
+
+\end{table}
+
+
+\subsection{Interrogatives \& Relatives}
+
+For nuanced interrogative/relative words, they are formed by taking the inflected forms of the interrogative/relative pronouns and mutating their case inflections as given in table 3.10, but keeping the other inflections for number and gender the same. For most words, unless needed, the other inflections for number and gender can be dropped.
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|}
+\hline
+
+
+\textbf{Word} & \textbf{Case} & \textbf{Intended Meaning} \\
+\hline
+
+    Why & Accusative & for what \\
+    \hline
+
+    How & Instrumental & by what \\
+    \hline
+
+    When & Dative & at what \\
+    \hline
+
+    Where & Locative (or its subcases) & in what \\
+    \hline
+
+
+\end{tabular}
+
+\caption{Nuanced Interrogative/Relative Words}
+
+\end{table}
+
+
+
+\subsection{Proximity}
+
+When a third person personal pronoun is used with all of its inflections, it fails to specify the proximity of the specified with respect to the speaker and the listener. Table 3.11 lists the prefixes used to specify that.
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|}
+\hline
+
+\textbf{Prefix} & \textbf{Proximity} \\
+\hline
+
+
+(default) & unspecific/away from both the speaker and the listener \\
+\hline
+
+\b{𑀒} & away from the speaker and close to the listener \\
+\hline
+
+\b{𑁲} & close to the speaker, away from the listener \\
+\hline
+
+\b{𑀉} & close to both the speaker and the listener \\
+\hline
+
+
+\end{tabular}
+
+\caption{Proximity Markers}
+
+\end{table}
+
+
+
+\subsection{Clusivity}
+
+
+Because of three numbers, clusivity is far more intricate than usual. It is also marked by a prefix to a first person dual or plural personal pronoun. Table 3.12 lists all the clusivity markers.
+
+
+\begin{table}[H]
+\centering
+    
+
+\begin{tabular}{|c|c|c|}
+\hline
+
+
+\textbf{Prefix} & \textbf{Meaning}  & \textbf{Clusivity} \\
+\hline
+
+(default) & speaker and direct listener; excluding passive listener & Dual Inclusive \\
+\hline
+
+\b{𑁲} & speaker and passive listener; excluding direct listener & Dual Exclusive \\
+\hline
+
+\b{𑁲} & including direct listener & Plural Inclusive \\
+\hline
+
+(default) & excluding direct listener & Plural Exclusive \\
+\hline
+
+
+\end{tabular}
+
+\caption{Clusivity Markers}
+
+\end{table}
+
+
+
+
+\chapter{Lexicon}
+
+
+\section{Conception \& The Root System}
+
+While scouring the universe for various grammatical lexicon and word{\textendash}building systems, I looked through various forms and practices in languages across the spectrum. Two systems, in particular, caught my eye, the Sanskrit{\textendash}Dravidian root affixation system and the Semitic multi{\textendash}consonantal template system. The Semitic system seemed very logical and straightforward. Although it was originally a similar affixing system just like the Indo{\textendash}European equivalent, millenia of elision and evolution has turned it into this logical looking template system. A bit more research showed me that having an unnaturally obtrusive template system is not really good (obviously for the naturality) of the language, and so I settled for my native system.
+
+Take the root \b{𑀓𑀾} in Sanskrit, which is associated with the action of \textit{doing}. From it, by attaching various affixes (and millenia of sandhi and evolution), we get words like \b{𑀘𑀓𑁆𑀭} for \textit{wheel}, \b{𑀓𑀭𑁆𑀫} for \textit{action} \b{𑀓𑀸𑀭𑀡𑀁} for \textit{reason}, and \b{𑀓𑀭𑁆𑀢} for \textit{doër}. This language specifies a very similar, yet highly regular affixing system for taking atomic roots and converting them to grammatically sound and nuanced stems.
+
+
+
+
+
+
+
+
+\section{Derivation}
+
+Using the atomic bare roots as a base, there are many ways of affixing (subject to \textit{sandhi}) it to deepen its nuance, mutate its meaning, or assign different grammatical functions to it. Every single nominal and verb in existence in the language is essentially an inflected affixed root stem. We will study the affix system by categorising affixes on the basis of grammatical function. Each section will begin with an affixing rule and a few examples after.
+
+
+The affix system is divided into two classes: strong and weak, or class I and II, respectively. In a final grammatically valid sentence, there can only exist strong forms of any root. A strong form of a root is sort of the final form of the root, with all its nuances and embellishments injected, ready for either standing by itself or being inflected grammatically rather than semantically. A weak form of a root is an incomplete variant of the root, and needs to be semantically inflected further. It cannot stand by itself in a sentence and no grammatical affixes can be attached to a weak form directly. A class I affix produces a strong form, whereas a class II affix produces a weak form. In other words, a strong form is a stem, whereas a weak form is a root.
+
+
+\subsection{Infinitive (class I)}
+
+\textbf{Rule}: \textit{root} + \b{𑀅𑀲}
+
+\begin{multicols}{2}
+    
+\begin{itemize}
+    
+    \item \b{𑀓𑀾𑀢𑀲}   {\textemdash} to do
+    \item \b{𑀧𑀰𑀲}    {\textemdash} to see
+    \item \b{𑀫𑀾𑀢𑀲}   {\textemdash} to die
+    \item \b{𑀧𑁀𑀢𑀲}   {\textemdash} to purify
+    \item \b{𑀕𑀟𑁆𑀟𑀲}  {\textemdash} to solidify/freeze
+    \item \b{𑀓𑀸𑀦𑁆𑀢𑀲} {\textemdash} to shine
+
+\end{itemize}
+
+\end{multicols}
+
+
+\subsection{Negation (class I \& II)}
+
+\textbf{Rule}: \b{𑀅𑀦𑁆} + \textit{root}
+
+\begin{multicols}{2}
+
+\begin{itemize}
+    
+    \item \b{𑀅𑀦𑁆𑀦𑀺𑀮𑁆}   {\textemdash} wake up
+    \item \b{𑀅𑀦𑁆𑀯𑁂𑀕𑁆}  {\textemdash} slow
+    \item \b{𑀅𑀦𑀼𑀜𑁆𑀘𑁆}   {\textemdash} empty
+    \item \b{𑀅𑀫𑁆𑀫𑁄𑀤𑁆} {\textemdash} sad
+
+\end{itemize}
+
+\end{multicols}
+
+
+\subsection{Reduplication (class II)}
+
+\textbf{Rule:} Double the the first syllable of the input root to increase emphasis/intensify its meaning.
+
+\begin{multicols}{2}
+    
+
+\begin{itemize}
+    
+    \item \b{𑀓𑀾𑀓𑀾𑀢𑁆}     {\textemdash} toil
+    \item \b{𑀧𑀧𑀰𑁆}       {\textemdash} stare
+    \item \b{𑀆𑀫𑁆𑀫𑁄𑀤𑁆} {\textemdash} agony
+    \item \b{𑀕𑀕𑀁}       {\textemdash} wander
+
+\end{itemize}
+
+
+\end{multicols}
+
+
+
+\subsection{Nominalisation (class I)}
+
+\textbf{Rule}: 
+
+\begin{itemize}
+
+    \item \textit{root} + \b{𑀅𑀢} + \textit{short vowel (masculine) / long vowel (feminine) / \b{𑀅𑀁} (neuter)}
+
+    \item The masculine and feminine forms make it an adjective inflected for gender, while the neuter form makes it a noun.
+
+\end{itemize}
+
+
+\begin{multicols}{3}
+
+
+\begin{itemize}
+    
+
+\item \b{𑀧𑀰𑀢𑀁}  {\textemdash} vision
+\item \b{𑀅𑀁𑀧𑀰𑀢}    {\textemdash} blind (masculine)
+\item \b{𑀫𑀾𑀢𑀢𑀁} {\textemdash} death
+\item \b{𑀫𑀾𑀢𑀢𑀸}  {\textemdash} dead (feminine)
+\item \b{𑀓𑀾𑀢𑀢𑀁} {\textemdash} action
+
+
+\end{itemize}    
+
+
+\end{multicols}
+
+
+
+\subsection{Causative Infinitive (class I)}
+
+\textbf{Rule}: \textit{root} + \b{𑀅𑀲𑁆𑀭}
+
+\begin{multicols}{2}
+    
+\begin{itemize}
+    
+    \item \b{𑀧𑀰𑀲𑁆𑀭}    {\textemdash} to show (\textit{lit.} to cause to see)
+    \item \b{𑀫𑀾𑀢𑀲𑁆𑀭}   {\textemdash} to kill (\textit{lit.} to cause to die)
+    \item \b{𑀓𑀸𑀦𑁆𑀢𑀲𑁆𑀭} {\textemdash} to polish (\textit{lit.} to cause to shine)
+    \item \b{𑀯𑀺𑀤𑀲𑁆𑀭}   {\textemdash} to teach (\textit{lit.} to cause knowledge)
+
+\end{itemize}
+
+\end{multicols}
+
+
+
+\subsection{Active (class II)}
+
+\textbf{Rule}: \textit{root} + \b{𑀅𑀭𑁅}
+
+\begin{multicols}{2}
+
+\begin{itemize}
+    
+    \item \b{𑀧𑀸𑀮𑀭𑁅𑀢}   {\textemdash} king (\textit{lit.} one who rules)
+    \item \b{𑀧𑀸𑀮𑀭𑁅𑀢𑀁} {\textemdash} government (\textit{lit.} one which rules)
+    \item \b{𑀓𑁵𑀭𑁅𑀢}   {\textemdash} artist (\textit{lit.} one who paints)
+    \item \b{𑀓𑁵𑀭𑁅𑀢𑀁} {\textemdash} brush (\textit{lit.} one which paints)
+
+\end{itemize}
+
+\end{multicols}
+
+
+
+\subsection{Passive (class II)}
+
+\textbf{Rule}: \textit{root} + \b{𑀅𑀲𑁆𑀬}
+
+\begin{multicols}{2}
+
+\begin{itemize}
+
+
+    \item \b{𑀧𑀮𑀲𑁆𑀬𑀸𑀢𑀁} {\textemdash} kingdom (\textit{lit.} one which is ruled)
+    \item \b{𑀯𑀤𑀲𑁆𑀬𑀸𑀢𑀁}  {\textemdash} speech (\textit{lit.} one which is said)
+
+
+\end{itemize}
+
+\end{multicols}
+
+
+
+\subsection{Compounds (class II)}
+
+\textbf{Rule}: \textit{root} + \b{𑁱} + \textit{root}
+
+
+\begin{multicols}{2}
+
+\begin{itemize}
+
+
+    \item \b{𑀧𑁳𑀤𑁳𑀚𑀮𑀢𑀁}    {\textemdash} ocean (\textit{lit.} big water)
+    \item \b{𑀅𑀁 𑀧𑁳𑀤𑁳𑀚𑀮𑀢𑀁} {\textemdash} pond (\textit{lit.} small water)
+    \item \b{𑀪𑀸 𑀦𑁳𑀓𑀸𑀦𑁆𑀢𑁳𑀔𑀸𑀤𑀭𑁅𑀢𑀁} {\textemdash} plant (\textit{lit.} sunlight {\textendash} one which eats)
+
+
+\end{itemize}
+
+\end{multicols}
+
+
+
+
+
+
+
+
+\section{Native Roots}
+
+
+\begin{center}
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+
+\b{𑀓𑀾𑀢𑁆} & do & \b{𑀕𑀁} & come/go & \b{𑀢𑁆𑀭𑀕𑁆} & drink & \b{𑀪𑀓𑁆𑀱𑁆} & consume & \b{𑀔𑀸𑀤𑁆} & eat \\
+\hline
+
+\b{𑀆𑀰𑁆} & desire & \b{𑀥𑀦𑁆} & money & \b{𑀚𑁆𑀜} & science & \b{𑀕𑁆𑀭𑀓𑁆} & give/receive & \b{𑀯𑀸𑀬𑁆} & gas \\
+\hline
+
+\b{𑀘𑀮𑁆} & movement & \b{𑀚𑀻𑀯𑁆} & life & \b{𑀔𑀘𑁆} & certainty & \b{𑀚𑀮𑁆} & water & \b{𑀩𑁵𑁆} & strength \\
+\hline
+
+\b{𑀪𑁅} & terrestrial & \b{𑀧𑀰𑁆} & see & \b{𑀲𑁆𑀧𑀭𑁆𑀰𑁆} & feel & \b{𑀉𑀢𑁆} & morality & \b{𑀦𑀺𑀮𑁆} & sleep \\
+\hline
+
+\b{𑀮𑀺𑀔𑁆} & write/express  & \b{𑀯𑀤𑁆} & speak/express & \b{𑁲𑁵𑁆} & body & \b{𑀫𑀦𑁆} & self/ego & \b{𑀲𑀾𑀱𑁆𑀝𑁆} & create/make \\
+\hline
+
+\b{𑀫𑀸𑀦𑁆} & human & \b{𑀓𑁵𑁆} & art & \b{𑀕𑁆𑀭𑀦𑁆𑀣𑁆} & literary & \b{𑀰𑀾𑀡𑁆} & hear & \b{𑀯𑀺𑀤𑁆} & knowledge \\
+\hline
+
+\b{𑀅𑀗𑁆𑀓𑁆} & count & \b{𑀅𑀕𑁆𑀦𑁆} & fire & \b{𑀫𑁄𑀤𑁆} & happiness & \b{𑀰𑀾} & love & \b{𑀕𑀟𑁆𑀟𑁆} & solid \\
+\hline
+
+\b{𑀪𑀯𑁆} & to be & \b{𑀫𑀾𑀢𑁆} & death & \b{𑀪𑀸𑀦𑁆} & sun & \b{𑀯𑁂𑀕𑁆} & speed & \b{𑀓𑀸𑀮𑁆} & time \\
+\hline
+
+\b{𑀧𑁆𑀭𑀓𑁆} & natural & \b{𑀯𑀭𑁆𑀡𑁆} & colour & \b{𑀓𑀞𑁆} & difficulty & \b{𑀧𑁳𑀤𑁆} & size & \b{𑀫𑁃𑀢𑀾} & friendship \\
+\hline
+
+\b{𑀲𑀳𑁆} & help & \b{𑀉𑀱𑁆𑀡𑁆} & temperature & \b{𑀧𑀽𑀭𑁆} & completeness & \b{𑁲𑀓𑁆} & similarity & \b{𑀫𑀶𑁆} & change \\
+\hline
+
+\b{𑀘𑀓𑀾} & circular & \b{𑀧𑁆𑁀𑀢𑁆} & purity & \b{𑀅𑀢𑁵𑁆} & chaos & \b{𑀪𑀬𑁆} & fear & \b{𑀚𑀕𑁆} & location \\
+\hline
+
+\b{𑀧𑀸𑀮𑁆} & rule/preside & \b{𑀓𑀸𑀦𑁆𑀢𑁆} & light & \b{𑀉𑀜𑁆𑀘𑁆} & hold/contain & \b{𑀫𑀾𑀕𑁆} & animal & \b{𑀫𑁆𑁴𑀓𑁆𑀓𑁆} & plant \\
+\hline
+
+\b{𑀤𑁆𑀭𑀯𑁆} & liquid & \b{𑀈𑀓𑁆} & weight & \b{𑀧𑀺𑀮𑁆𑀮𑁆} & progeny & \b{𑀪𑀕𑁆} & divine & \b{𑀓𑀸𑀬𑁆} & shape \\
+\hline
+
+\b{𑀕𑀼𑀡𑁆𑀟𑁆} & curvature & \b{𑀅𑀧𑁆𑀭𑁆} & finite & \b{𑀅𑀜𑁆} & other & \b{𑀫𑁆𑁴𑀤𑀮𑁆} & start & \b{𑀫𑁆𑁴𑀤𑁆𑀤𑁆} & adhesion \\
+\hline
+
+\b{𑀪𑀭𑁆} & fill/pour & \b{𑀧𑁆𑁴𑀟𑁆} & amorphous & \b{𑀩𑀗𑁆} & gelatinous & \b{𑀮𑀽𑀦𑁆} & moon & \b{𑀶} & lith \\
+\hline
+
+\b{𑀭𑀓𑁆𑀱𑁆} & safety & \b{𑀊𑀜𑁆𑀘𑁆} & altitude & \b{𑀤𑀽𑀭𑁆} & distance & \b{𑀦𑀾𑀢𑁆} & dance & \b{𑀦𑁆𑁳𑀭𑁆} & crime \\
+\hline
+
+\b{𑁱𑀕𑁵𑁆} & comedy & \b{𑀧𑁆𑀭𑀢𑀺} & directness & \b{𑀤𑀺𑀦𑁆} & day & \b{𑀤𑀺𑀓𑁆} & direction & \b{𑀕𑀢𑁆} & past \\
+\hline
+
+\b{𑀪𑀯𑁆} & future & \b{𑀯𑀭𑁆𑀢𑁆} & present & \b{𑀋} & universality & \b{𑀋𑀢𑁆} & season & \b{𑀋𑀘𑁆} & praise \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+\b{} &  & \b{} &  & \b{} &  & \b{} &  & \b{} &  \\
+\hline
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{tabular}
+\end{table}
+\end{center}
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
